@@ -1,0 +1,15 @@
+services:
+- hash: abcd
+  name: node-consumption
+  path: /openshift/node-consumption-template.yaml
+  url: https://github.com/redhatinsights/kube-scripts
+  hash_length: 7
+  environments:
+  - name: production
+    parameters:
+      REGISTRY_IMG: quay.io/cloudservices/kube-scripts
+      CHANNEL: production
+  - name: staging
+    parameters:
+      REGISTRY_IMG: quay.io/cloudservices/kube-scripts
+      CHANNEL: staging

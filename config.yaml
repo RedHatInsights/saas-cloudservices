@@ -1,0 +1,7 @@
+contexts:
+- data:
+    output_dir: node-consumption-processed
+    services_dir: node-consumption-services
+    templates_dir: node-consumption-templates
+  name: node-consumption
+current: node-consumption
