@@ -4,4 +4,9 @@ contexts:
     services_dir: node-consumption-services
     templates_dir: node-consumption-templates
   name: node-consumption
-current: node-consumption
+- data:
+    output_dir: uhc-processed
+    services_dir: uhc-services
+    templates_dir: uhc-templates
+  name: uhc
+current: uhc

@@ -1,0 +1,16 @@
+services:
+- environments:
+  - name: production
+    parameters:
+      CHANNEL: production
+      REGISTRY_IMG: quay.io/cloudservices/uhc-auth-proxy
+  - name: staging
+    parameters: &id001
+      CHANNEL: staging
+      REGISTRY_IMG: quay.io/cloudservices/uhc-auth-proxy
+  hash: 88f8365fa5182108d72199b2568664ea22a562e6
+  hash_length: 7
+  name: uhc-auth-proxy
+  parameters: *id001
+  path: /openshift/uhc-auth-proxy-template.yaml
+  url: https://github.com/RedHatInsights/uhc-auth-proxy
